@@ -42,6 +42,14 @@ $ go run test/main.go --endpoint http://localhost:8080/update --payload ./test/u
 
 Using [`ngrok`](https://ngrok.com/), forward the address that the server is listening for locally to the web, then send requests through `ngrok`'s servers.
 
+## Developing
+
+None of the GrapqhQL endpoints we use to talk to the Expo servers are documented anywhere, so [`mitmproxy`](https://mitmproxy.org/) was used to intercept traffic from the `eas` CLI. After adding the `mitmproxy` CA to the developer machine's root trust bundle, run the EAS CLI like so:
+
+```shell
+$ NODE_TLS_REJECT_UNAUTHORIZED=0 https_proxy=https://localhost:9090 eas update:list --branch=preview --limit=2 --non-interactive
+```
+
 ## Deploying
 
 We use Vercel's [serverless offering for Golang](https://vercel.com/docs/functions/runtimes/go) for no reason other than NWAC already has a business relationship with Vercel which makes this an easy on-ramp.
