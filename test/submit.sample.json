@@ -1,0 +1,23 @@
+{
+  "accountName": "nwac",
+  "appId": "47e2fd36-5165-4eb4-9a2d-21beec393379",
+  "archiveUrl": null,
+  "cancelingUserId": null,
+  "completedAt": "2025-03-26T20:15:26.279Z",
+  "createdAt": "2025-03-26T19:53:02.454Z",
+  "id": "812c84ca-4106-476e-ae56-6d5b323585d3",
+  "initiatingUserId": "0f03ad02-67d5-45f4-9ba2-a8070a6bfba9",
+  "maxRetryTimeMinutes": 1440,
+  "parentSubmissionId": null,
+  "platform": "ios",
+  "priority": "high",
+  "projectName": "avalanche-forecast",
+  "status": "finished",
+  "submissionDetailsPageUrl": "https://expo.dev/accounts/nwac/projects/avalanche-forecast/submissions/812c84ca-4106-476e-ae56-6d5b323585d3",
+  "submissionInfo":
+  {
+    "logsGCSKeyPrefix": "production/cd3e1712-ea8c-424d-8e71-361702328d92/submission_812c84ca-4106-476e-ae56-6d5b323585d3"
+  },
+  "turtleBuildId": "d097e433-ee3d-41e9-a63f-c7ca643984cb",
+  "updatedAt": "2025-03-26T20:15:31.723Z"
+}

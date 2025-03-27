@@ -1,0 +1,94 @@
+{
+  "accountName": "nwac",
+  "actualResourceClass": "linux-c3d-standard-4",
+  "appId": "47e2fd36-5165-4eb4-9a2d-21beec393379",
+  "artifacts":
+  {
+    "applicationArchiveUrl": "https://expo.dev/artifacts/eas/7zrT97jxADvXca7MmX1jUA.aab",
+    "buildUrl": "https://expo.dev/artifacts/eas/7zrT97jxADvXca7MmX1jUA.aab"
+  },
+  "buildDetailsPageUrl": "https://expo.dev/accounts/nwac/projects/avalanche-forecast/builds/35425398-97b0-4f02-ac41-beb723090aa2",
+  "buildMode": "build",
+  "buildWebhookCalled": false,
+  "cancelingUserId": null,
+  "completedAt": "2025-03-26T19:31:11.893Z",
+  "createdAt": "2025-03-26T19:19:46.710Z",
+  "enqueuedAt": "2025-03-26T19:19:47.260Z",
+  "error": null,
+  "expirationDate": "2025-04-25T19:19:46.837Z",
+  "id": "35425398-97b0-4f02-ac41-beb723090aa2",
+  "initiatingUserId": "0f03ad02-67d5-45f4-9ba2-a8070a6bfba9",
+  "maxRetryTimeMinutes": 180,
+  "metadata":
+  {
+    "appBuildVersion": "41",
+    "appIdentifier": "preview.us.nwac.forecast",
+    "appName": "Avy (Preview)",
+    "appVersion": "1.0.0",
+    "buildProfile": "preview",
+    "channel": "preview",
+    "cliVersion": "16.1.0",
+    "credentialsSource": "remote",
+    "developmentClient": false,
+    "distribution": "store",
+    "fingerprintHash": "e06f5af0f8683ca66ac2440f85f237a008da8fed",
+    "fingerprintSource":
+    {
+      "bucketKey": "production/0f03ad02-67d5-45f4-9ba2-a8070a6bfba9/47f4f67c-d6a4-4bcf-bcaf-10884efe74eb",
+      "isDebugFingerprint": false,
+      "type": "GCS"
+    },
+    "gitCommitHash": "499a175e6eedad4c3a68be1e8d4fbc072c99aefd",
+    "gitCommitMessage": "remove mixpanel logging (#909)",
+    "isGitWorkingTreeDirty": true,
+    "projectMetadataFile":
+    {
+      "bucketKey": "production/0f03ad02-67d5-45f4-9ba2-a8070a6bfba9/2eb36dc0-8155-4203-8ef2-b2cb252bc6fc",
+      "type": "GCS"
+    },
+    "reactNativeVersion": "0.76.7",
+    "requiredPackageManager": "yarn",
+    "runFromCI": true,
+    "runWithNoWaitFlag": false,
+    "runtimeVersion": "1.0.0",
+    "sdkVersion": "52.0.0",
+    "simulator": false,
+    "trackingContext":
+    {
+      "account_id": "66cb5493-b984-462e-bef3-f7d3473caf56",
+      "dev_client": false,
+      "dev_client_version": "5.0.15",
+      "local": false,
+      "no_wait": false,
+      "platform": "android",
+      "project_id": "47e2fd36-5165-4eb4-9a2d-21beec393379",
+      "project_type": "managed",
+      "run_from_ci": true,
+      "sdk_version": "52.0.0",
+      "tracking_id": "c18b56f8-c370-4013-97f9-249d3effdff2"
+    },
+    "username": "steve.kuznetsov",
+    "workflow": "managed"
+  },
+  "metrics":
+  {
+    "buildEgressBytes": 9036815,
+    "buildEndTimestamp": 1743017471238,
+    "buildIngressBytes": 1273849620,
+    "buildStartTimestamp": 1743016857631
+  },
+  "parentBuildId": null,
+  "platform": "android",
+  "priority": "high",
+  "projectName": "avalanche-forecast",
+  "provisioningStartedAt": "2025-03-26T19:19:53.457Z",
+  "requestedResourceClass": "android-default",
+  "resolvedEnvironment": "production",
+  "resourceClass": "linux-c3d-standard-4",
+  "status": "finished",
+  "updatedAt": "2025-03-26T19:31:19.716Z",
+  "usageInformationSentToBigQuery": false,
+  "waivedAt": null,
+  "waiverType": null,
+  "workerStartedAt": "2025-03-26T19:20:57.634Z"
+}
