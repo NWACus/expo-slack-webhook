@@ -131,13 +131,13 @@ func fetchPreviousUpdate(ctx context.Context, cfg *config.Config, update Update)
 		return nil, fmt.Errorf("failed to fetch updates: %v", err)
 	}
 
-	return previousUpdateFor(update.Platform, createdAt, updates)
+	return previousUpdateFor(update.Platform, update.Id, createdAt, updates)
 }
 
-func previousUpdateFor(platform expo.Platform, createdAt time.Time, updates [][]expo.Update) (*expo.Update, error) {
+func previousUpdateFor(platform expo.Platform, id string, createdAt time.Time, updates [][]expo.Update) (*expo.Update, error) {
 	for i := 0; i < len(updates); i++ {
 		for j := 0; j < len(updates[i]); j++ {
-			if !updates[i][j].Platform.Equal(platform) {
+			if !updates[i][j].Platform.Equal(platform) || updates[i][j].Id == id {
 				continue
 			}
 			updateCreatedAt, err := time.Parse(time.RFC3339, updates[i][j].CreatedAt)

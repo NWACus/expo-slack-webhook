@@ -138,7 +138,7 @@ func fetchPreviousUpdate(ctx context.Context, cfg *config.Config, w *WebhookPayl
 		return nil, fmt.Errorf("failed to fetch updates: %v", err)
 	}
 
-	return previousUpdateFor(w.Platform, createdAt, updates)
+	return previousUpdateFor(w.Platform, w.Id, createdAt, updates)
 }
 
 func updateBranchFor(platform expo.Platform, channel *expo.UpdateChannel) string {
@@ -157,10 +157,10 @@ func updateBranchFor(platform expo.Platform, channel *expo.UpdateChannel) string
 	return ""
 }
 
-func previousUpdateFor(platform expo.Platform, createdAt time.Time, updates [][]expo.Update) (*expo.Update, error) {
+func previousUpdateFor(platform expo.Platform, id string, createdAt time.Time, updates [][]expo.Update) (*expo.Update, error) {
 	for i := 0; i < len(updates); i++ {
 		for j := 0; j < len(updates[i]); j++ {
-			if !updates[i][j].Platform.Equal(platform) {
+			if !updates[i][j].Platform.Equal(platform) || updates[i][j].Id == id {
 				continue
 			}
 			updateCreatedAt, err := time.Parse(time.RFC3339, updates[i][j].CreatedAt)
